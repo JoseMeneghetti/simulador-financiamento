@@ -18,7 +18,7 @@ export function DataTableRowActions<TData>({
   row,
 }: DataTableRowActionsProps<TData>) {
   const useTable = UseTable();
-  const amortizacao = useTable?.amortization.find(
+  const amortizacao = useTable?.amortization?.find(
     (el) => el.parcela === row.getValue("parcela")
   );
 
